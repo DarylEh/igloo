@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Igloo Software</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+	crossorigin="anonymous"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./public/styles/style.css">
+</head>
+<body>
+	<!-- Header Section -->
+	<header class="container">
+		<nav class="main-nav">
+			<!-- Hamburger Icon -->
+			<div class="open-slide">
+				<a href="#" onClick="openSideMenu()"><i class="fas fa-bars"></i></a>
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Campaigns/Brand</a></li>
+				<li><a href="#">Files</a></li>
+				<li><a href="#">Departments</a></li>
+				<li><a href="#">People</a></li>
+			</ul>
+		</nav>
+		<!-- Slide Menu -->
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onClick="closeSideMenu()" ><i class="fas fa-times"></i></a>
+			<a href="#">Home</a>
+			<a href="#">Dashboard</a>
+			<a href="#">About</a>
+			<a href="#">Campaigns/Brand</a>
+			<a href="#">Files</a>
+			<a href="#">People</a>
+		</div>
+		<!-- Search Input -->
+		<div class="search-container">
+			<i class="fas fa-search search-icon"></i>
+			<input class="search-box" type="search" name="search" placeholder="Search Everywhere">
+		</div>
+	</header>
+	<!-- Hero/Banner Section -->
+	<section class="hero">
+		<div class="hero-text container">
+			<form action="" class="hero-form">
+				<ul class="hero-list">
+					<!-- 3 Hero/Banner Greetings -->
+					<li class="hero-item">
+						<input type="radio" name="hero-select" value="quote1" id="quote1" class="radio-button quote1" checked>
+						<label for="quote1" class="radio-label quote1"></label>
+						<div class="hero-greeting">
+							<h1>Welcome to the Community</h1>
+							<h3>Share, connect and collaborate.</h3>
+						</div>
+					</li>
+					<li class="hero-item">
+						<input type="radio" name="hero-select" value="quote2" id="quote2" class="radio-button quote2">
+						<label for="quote2" class="radio-label quote2"></label>
+						<div class="hero-greeting">
+							<h1>Hi!</h1>
+							<h3>I'm Daryl</h3>
+						</div>
+					</li>
+					<li class="hero-item">
+						<input type="radio" name="hero-select" value="quote3" id="quote3" class="radio-button quote3">
+						<label for="quote3" class="radio-label quote1"></label>
+						<div class="hero-greeting">
+							<h1>And</h1>
+							<h3>I would love to work at IGLOO!!!</h3>
+						</div>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</section>
+	<!-- Stories from Us Section -->
+	<section class="annoucements">
+		<div class="container grid">
+			<h1>Stories from Us</h1>
+			<div class="announce">
+				<div class="annouce-point">
+					<p class="date">May 20, 2015</p>
+					<h3>Corporate Announcement</h3>
+					<img src="./public/assets/photo1.jpg" alt="">
+					<p>We want to ensure you are comfortable with our new and awesome platform. Since we have launched our new community we have
+					been receiving excellent feedback, but we would like to personally hear from you.</p>
+					<a href="#">Read More</a>
+				</div>
+				<div class="annouce-point">
+					<p class="date">July 18, 2015</p>
+					<h3>New Office Location</h3>
+					<img src="./public/assets/photo2.jpg" alt="">
+					<p>We have officially moved into our new office location! It has been a long time coming but we have survived and now we are
+					settling in.</p>
+					<a href="#">Read More</a>
+				</div>
+				<div class="annouce-point">
+					<p class="date">August 26 2015</p>
+					<h3>Connect with coworkers</h3>
+					<img src="./public/assets/photo3.jpg" alt="">
+					<p>We are looking into using this new platform to further assist you in connecting with your coworkers. We are hoping this tool
+					will rock!</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Good ol Footer -->
+	<footer>
+		<div class="container grid">
+			<p>&#169 2016</p>
+			<img src="./public/assets/igloo-chicklet-gr.png" alt="">
+		</div>
+	</footer>	
+	<!-- JS -->
+	<script src="./public/scripts/main.js"></script>
+</body>
+</html>
+
